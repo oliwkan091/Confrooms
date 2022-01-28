@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>Błąd</title>
+    <meta charset="utf-8" />
+</head>
+<body class="text-center">
+    <div th:replace="fragments/navbar :: navbar"></div>
+    <div class="container align-content-center mt-2">
+        <lottie-player class="container align-content-center mt-2" src="https://assets1.lottiefiles.com/packages/lf20_bFjzfy.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"    autoplay></lottie-player>
+        <a href="index.html" class="btn btn-lg btn-outline-warning" th:href="@{/}">Wróć na stronę główną</a>
+    </div>
+</body>
+</html>
